@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.widget.Button
 import android.widget.Chronometer
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity;
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     lateinit var stopwatch: Chronometer     // Хронометр
     var running = false                     // Хронометр работает?
     var offset: Long = 0                    // Базовое смещение
